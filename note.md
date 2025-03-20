@@ -42,6 +42,17 @@ int gcd(int i, int j){
 }
 ```
 
+## pair
+### 建立
+以 *UVA118 Mutant Flatworld Explorers* 為例。
+``` C++
+pair<int, int> tpair(current_x, current_y);
+```
+### 讀取
+``` C++
+cout << tpair.first << ' ' << tpair.second << endl;
+```
+
 ## map
 以 *UVA10226 Hardwood Species* 為例。
 ### 建立
@@ -49,6 +60,15 @@ int gcd(int i, int j){
 ``` C++
 #include <map>
 map<string, int> mapTree;
+```
+以 *UVA118 Mutant Flatworld Explorers* 為例。
+``` C++
+map<char, pair<int, int>> mapTable = {
+	{'N', {0, 1}},
+	{'E', {1, 0}},
+	{'S', {0, -1}},
+	{'W', {-1, 0}}
+};
 ```
 
 ### 輸入
