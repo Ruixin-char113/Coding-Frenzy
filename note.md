@@ -42,6 +42,19 @@ int gcd(int i, int j){
 }
 ```
 
+## string
+### length
+長度
+``` C++
+for(int i = 0; i < input.length(); i++)
+```
+### substr
+以 *UVA10298 Power Strings* 為例。  
+`substr(a, b)` a: 起始位置，b: 要多少字元。
+``` C++
+string b = input.substr(0,i+1);
+```
+
 ## pair
 ### 建立
 以 *UVA118 Mutant Flatworld Explorers* 為例。
