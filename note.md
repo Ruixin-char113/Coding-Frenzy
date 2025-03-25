@@ -1,5 +1,23 @@
 # Programming Note
 
+## 二進制處理
+以 *UVA10343 Base64 Decoding* 為例。
+### 左移
+``` C++
+store << 6;
+store <<= 6; // 等效 store = store << 6;
+```
+### 右移
+``` C++
+store >> 6;
+store >>= 6; // 等效 store = store >> 6;
+```
+### AND
+``` C++
+int mask = pow(2, 8) - 1;
+store >> (i * 8) & mask
+```
+
 ## 英文字元轉換大小寫
 ``` C++
 #include <cctype>
