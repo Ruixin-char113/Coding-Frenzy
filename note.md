@@ -84,6 +84,17 @@ pair<int, int> tpair(current_x, current_y);
 cout << tpair.first << ' ' << tpair.second << endl;
 ```
 
+## stack
+### 建立
+``` C++
+stack<char> stackA;
+```
+### 加入
+``` C++
+char c = 'a';
+stackA.push(c);
+```
+
 ## map
 以 *UVA10226 Hardwood Species* 為例。
 ### 建立
