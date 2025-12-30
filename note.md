@@ -39,6 +39,20 @@ ceil(double number)
 floor(double number)
 ```
 
+## 反轉容器內容 reverse
+``` C++
+#include <algorithm>
+string a;
+reverse(a.begin(),a.end());
+```
+
+## 歷遍容器方法
+``` C++
+array<int, 500> ans = {0};
+for(int x:ans){
+}
+```
+
 ## 輾轉相除法
 以 *UVA11417 GCD* 為例。  
 最大公因數
@@ -161,3 +175,12 @@ hartalDays.erase(6 + 7 * i);
 ``` C++
 hartalDays.size()
 ```
+
+## array
+### 初始化
+``` C++
+array<int, 500> ans = {0};
+```
+* `int` 資料型態
+* `500` 容量
+* `{0}` 初始化數值
