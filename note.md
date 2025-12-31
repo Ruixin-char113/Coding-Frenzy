@@ -53,6 +53,25 @@ for(int x:ans){
 }
 ```
 
+## 大數相乘
+以 *UVA10220 I Love Big Numbers!* 為例。  
+先同乘，再處理進位。
+``` C++
+array<int, 3000> largeNumber = {0};
+largeNumber[0] = 1;
+for(int i =1; i <= 1000; i++){
+	// Product
+	for(int j=0; j<3000; j++){
+		largeNumber[j] *= i;
+	}
+	// Carry
+	for(int j=0; j<3000; j++){
+		largeNumber[j+1] += largeNumber[j] / 10;
+		largeNumber[j] %= 10;
+	}
+}
+```
+
 ## 輾轉相除法
 以 *UVA11417 GCD* 為例。  
 最大公因數
