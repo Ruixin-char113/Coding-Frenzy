@@ -1,5 +1,24 @@
 # Programming Note
 
+## 輸出控制
+### setw()
+保留多少寬度
+``` C++
+#include <iomanip>
+cout << setw(x) 
+	<< temp << endl;
+// [   1]
+```
+
+### setfill()
+利用字元填滿剩餘寬度
+``` C++
+#include <iomanip>
+cout << setw(x) << setfill('0')
+	<< temp << endl;
+// [0001]
+```
+
 ## 二進制處理
 以 *UVA10343 Base64 Decoding* 為例。
 ### 左移
