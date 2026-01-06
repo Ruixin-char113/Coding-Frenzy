@@ -19,6 +19,26 @@ cout << setw(x) << setfill('0')
 // [0001]
 ```
 
+### setprecision()
+控制有效浮點數精度
+``` C++
+#include <iomanip>
+double a = 21.1234;
+cout << setprecision(4) << a << endl;
+// [21.12]
+double b = 0.00045;
+cout << defaultfloat << setprecision(2) << b << endl;
+// [0.00045]
+```
+
+### fixed
+``` C++
+#include <iomanip>
+double a = 21.1234;
+cout << setprecision(10) << fixed << a << endl;
+// [21.1234000000]
+```
+
 ## 二進制處理
 以 *UVA10343 Base64 Decoding* 為例。
 ### 左移
