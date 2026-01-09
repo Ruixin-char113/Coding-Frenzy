@@ -115,20 +115,11 @@ for(int i =1; i <= 1000; i++){
 以 *UVA11417 GCD* 為例。  
 最大公因數
 ``` C++
-int gcd(int i, int j){
-	int large = max(i, j);
-	int small = min(i, j);
-
-	while(1){
-		int remainder = large % small;	
-		if(remainder){
-			large = small;
-			small = remainder;
-		}
-		else{
-			return small;
-		}
-	}	
+int fgcd(int a, int b){
+	while(a %= b){
+		swap(a,b);
+	}
+	return b;
 }
 ```
 
