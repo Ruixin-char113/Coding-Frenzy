@@ -76,6 +76,7 @@ setprecision(n)
 #include <cmath>
 ceil(double number)
 floor(double number)
+round(double number)
 ```
 
 ## 反轉容器內容 reverse
