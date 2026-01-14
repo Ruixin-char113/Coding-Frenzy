@@ -188,6 +188,22 @@ stack<char> stackA;
 char c = 'a';
 stackA.push(c);
 ```
+### 頂端
+``` C++
+stackA.top();
+```
+### 移除頂端
+``` C++
+stackA.pop();
+```
+### 是否為空
+``` C++
+stackA.empty();
+```
+### 容量
+``` C++
+stackA.size();
+```
 
 ## map
 以 *UVA10226 Hardwood Species* 為例。
