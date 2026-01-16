@@ -280,3 +280,14 @@ array<int, 500> ans = {0};
 * `int` 資料型態
 * `500` 容量
 * `{0}` 初始化數值
+
+## vector
+### 初始化
+``` C++
+vector<pair<int, int>> cherries;
+```
+### 新增
+``` C++
+pair<int, int> c(x, y);
+cherries.push_back(c);
+```
