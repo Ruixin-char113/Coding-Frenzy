@@ -79,6 +79,12 @@ floor(double number)
 round(double number)
 ```
 
+## PI
+``` C++
+#include <cmath>
+#define PI 2*acos(0)
+```
+
 ## 反轉容器內容 reverse
 ``` C++
 #include <algorithm>
