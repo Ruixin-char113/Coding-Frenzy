@@ -211,6 +211,29 @@ stackA.empty();
 stackA.size();
 ```
 
+## queue
+### 建立
+``` C++
+#include <queue>
+queue<pair<int, char>> todo;
+```
+### 存入尾端
+``` C++
+todo.push({i, color == 'A' ? 'B' : 'A'});
+```
+### 取得最前值
+``` C++
+todo.front();
+```
+### 移除最前值
+``` C++
+todo.pop();
+```
+### 是否為空
+``` C++
+todo.empty();
+```
+
 ## map
 以 *UVA10226 Hardwood Species* 為例。
 ### 建立
